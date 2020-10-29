@@ -1,19 +1,111 @@
-<!doctype html>
+<!doctype>
 <html>
 <head>
-<title> 덴마크어의 모든 것 - ByHæin </title>
-<meta charset="utf-8">
-</head>
+   <meta charset="utf-8">
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+        body{
+            font-family:"Noto Sans KR", "Arial";
+            display:flex;
+/*            align-items:center;*/
 
+/*            background-image:url("helleupstrand.jpg");*/
+        }
+        .container{
+            display: flex;
+            padding-top: 100px;
+            flex-direction:column;
+        }
+        header{
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        headercontainer{
+            display:flex;
+            flex-direction: column;
+        }
+        .headercontent{
+            display: flex;
+            align-items: flex-end
+        }
+        .headercontent nav{
+            flex-basis: 400px;
+            flex-shrink: 0;
+        }
+        .headercontent main ul{
+            list-style-type: none;
+        }
+        .headercontent main ul li{
+            display: inline;
+        }
+        footer{
+            background-color:#00A693;
+            padding:20px;
+ /*           text-align:center;*/
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right:1px solid gray;
+            
+        }
+        .content aside{
+            border-left:1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink:0;
+        }
+        main{
+            padding:10px;
+        }
+    </style>
+</head>
 <body>
-  <h1><a href="index.html">덴마크어 강의</a></h1>
-  <ol>
-    <li><a href="1_alfabet.html">알파벳</a></li>
-    <li><a href="2_simple_saetninger.html">간단한 일상표현</a></li>
-    <li><a href="3_praesentation.html">자기 소개하기</a></li>
-  </ol>
-  <br>
-  <img src="dyrehaven.jpg" width="100%">
-  안녕하세요. 덴마크어의 모든 것을 파헤치는 ByHæin입니다. 저와 함께 덴마크어를 알아가기위한 여정 차근차근 함께 해보실까요?
+    <header>
+        <div class="headercontainer">
+           <section class="headercontent">
+               <nav>
+                   <img src="Color logo - no background.png" width=200px>
+               </nav>
+               <main>
+                  <ul>
+                      <li>HOME</li>
+                      <li>강의</li>
+                      <li>통번역</li>
+                      <li>About BYHÆIN</li>
+                  </ul>
+               </main>
+           </section>            
+        </div>
+    </header>
+        <div class="container">
+
+        <section class="content">
+            <nav><ul>
+                <li>알파벳</li>
+                <li>간단한 표현</li>
+                <li>자기소개</li>
+            </ul>                
+            </nav>
+            <main>
+                Det ser ikke særlig så fantastisk økonomiLoræm ¨æøå ipsum dolor sit amet, consectetur adipisicing elit. Totam commodi libero vitae impedit nostrum doloremque alias, illum, autem et eos in unde culpa ex velit voluptates ut voluptatum repellendus molestias ab adipisci numquam laudantium voluptatem veritatis odio. Illum eveniet deserunt eius, consequuntur commodi facere laboriosam alias est modi quae, fugit blanditiis dolorem accusantium aliquam ad, rerum voluptates. Eum tenetur, nesciunt est accusantium, nobis sint. Et, dolorem asperiores aut unde, accusantium ab ex vero dolorum eos consectetur fuga quo, pariatur expedita voluptatem voluptate delectus magni, corporis tempore soluta quae! Repellendus sequi doloremque eum voluptate asperiores reiciendis tenetur explicabo quae commodi fugiat.
+                <p>
+                Det ser ikke særlig så fantastisk økonomiLoræm ¨æøå ipsum dolor sit amet, consectetur adipisicing elit. Totam commodi libero vitae impedit nostrum doloremque alias, illum, autem et eos in unde culpa ex velit voluptates ut voluptatum repellendus molestias ab adipisci numquam laudantium voluptatem veritatis odio. Illum eveniet deserunt eius, consequuntur commodi facere laboriosam alias est modi quae, fugit blanditiis dolorem accusantium aliquam ad, rerum voluptates. Eum tenetur, nesciunt est accusantium, nobis sint. Et, dolorem asperiores aut unde, accusantium ab ex vero dolorum eos consectetur fuga quo, pariatur expedita voluptatem voluptate delectus magni, corporis tempore soluta quae! Repellendus sequi doloremque eum voluptate asperiores reiciendis tenetur explicabo quae commodi fugiat.
+                </p>
+                <p>
+                Det ser ikke særlig så fantastisk økonomiLoræm ¨æøå ipsum dolor sit amet, consectetur adipisicing elit. Totam commodi libero vitae impedit nostrum doloremque alias, illum, autem et eos in unde culpa ex velit voluptates ut voluptatum repellendus molestias ab adipisci numquam laudantium voluptatem veritatis odio. Illum eveniet deserunt eius, consequuntur commodi facere laboriosam alias est modi quae, fugit blanditiis dolorem accusantium aliquam ad, rerum voluptates. Eum tenetur, nesciunt est accusantium, nobis sint. Et, dolorem asperiores aut unde, accusantium ab ex vero dolorum eos consectetur fuga quo, pariatur expedita voluptatem voluptate delectus magni, corporis tempore soluta quae! Repellendus sequi doloremque eum voluptate asperiores reiciendis tenetur explicabo quae commodi fugiat.
+                </p>
+            </main>
+
+        </section>
+        <footer>
+            Copyright © 2020 ByHæin All Rights Reserved. CVR-nr. 41472065 
+        </footer>
+    </div>
 </body>
 </html>
