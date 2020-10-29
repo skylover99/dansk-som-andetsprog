@@ -1,0 +1,158 @@
+<!doctype>
+<html>
+<head>
+   <meta charset="utf-8">
+    <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+        body{
+            font-family:"Nanum Gothic", "Arial";
+            font-size: medium;
+            display:flex;
+/*            align-items:center;*/
+
+/*            background-image:url("helleupstrand.jpg");*/
+        }
+        .container{
+            display: flex;
+            padding-top: 100px;
+            flex-direction:column;
+        }
+        header{
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        headercontainer{
+            display:flex;
+            flex-direction: column;
+        }
+        .headercontent{
+            display: flex;
+            align-items: flex-end;
+        }
+        .headercontent nav{
+            flex-basis: 150px;
+            flex-shrink: 0;
+            margin-top: 10px;
+            margin-left:10px;
+        }
+        .headercontent main ul{
+            list-style-type: none;
+        }
+        .headercontent main ul li{
+            display: inline;
+            padding-left:50px;
+            font-size:14px; 
+        }
+        .headercontent main ul li a{
+            text-decoration: none;
+            color:#000000;
+        }
+        footer{
+            background-color:#00A693;
+            padding:20px;
+            font-size: 12px;
+            color: white;
+            width: 800px;
+ /*           text-align:center;*/
+        }
+        .content{
+            display:flex;
+        }
+
+        .content aside{
+            border-left:1px solid gray;
+        }
+
+        main{
+            /*padding:10px;*/
+            flex-basis: 800px;
+            flex-shrink: 1;
+            font-size:smaller;
+            line-height: 1.7em;
+            margin-top:10px;
+            margin-left:10px;
+        }
+        main label{font-weight: bold}
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+        }
+        .tree input[type="checkbox"]{
+            display:none;
+        }
+        .tree input[type="checkbox"]:checked~ul{
+            display:none;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+           <section class="headercontent">
+               <nav>
+                   <img src="Color logo - no background.png" width=150px>
+               </nav>
+               <main>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="dansk.html"><b>덴마크어</b></a></li>
+                      <li><a href="oversaettelse.html">통번역</a></li>
+                      <li><a href="nyheder.html">덴마크 뉴스</a></li>
+                      <li><a href="aboutme.html">About me</a></li>
+                  </ul>
+               </main>
+           </section>            
+        </div>
+    </header>
+        <div class="container">
+
+        <section class="content">
+
+            <main>
+            <h1>덴마크어 강의 by Hæin</h1>
+            <p>덴마크어 강의는 크게 두가지 트랙으로 나뉩니다. 기초부터 차근차근 밟아올라가는 회화와 필요한 문법만 찾아볼 수 있는 문법으로 나뉘어 있습니다. 덴마크어를 배운 적이 없는 분들은 기초부터 밟아올라가시되 중간중간 확인이 필요한 문법요소가 있을 때는 문법 항목에서 필요한 내용을 뽑아서 보시면 됩니다.
+            </p>
+            <p>회화와 문법은 꾸준히 업데이트됩니다.</p>
+            <ul class="tree">
+               <li>
+                   <input type="checkbox" id="root">
+                   <label for="root">트랙 선택</label>
+                      <ul>
+                       <li>
+                           <input type="checkbox" id="tale">
+                           <label for="tale">회화</label>
+                           <ul>
+                               <li><a href="1_alfabet.html">알파벳</a></li>
+                               <li>간단한 일상표현</li>
+                           </ul>
+                       </li>
+                        <li>
+                           <input type="checkbox" id="grammatik">
+                           <label for="grammatik">문법</label>
+                           <ul>
+                               <li>문장구조</li>
+                               <li>부사어의 위치</li>
+                           </ul>
+                        </li>
+                      </ul>
+                         
+                      </ul>                        
+            </main>
+
+        </section>
+        <footer>
+            <div>
+            Copyright © 2020 ByHæin All Rights Reserved. CVR-nr. 41472065
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>
